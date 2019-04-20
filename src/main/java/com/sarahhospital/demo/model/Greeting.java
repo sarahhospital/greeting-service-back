@@ -1,13 +1,15 @@
 package com.sarahhospital.demo.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class Greeting {
-    private final String message;
 
-    public Greeting(String message) {
-        this.message = message;
-    }
+    private String message;
 
-    public String getMessage() {
-        return message;
+    public Greeting() {
+
     }
 }

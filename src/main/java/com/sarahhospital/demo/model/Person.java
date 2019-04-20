@@ -1,19 +1,15 @@
 package com.sarahhospital.demo.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class Person {
+
     private String name;
 
-    public Person() {}
+    public Person() {
 
-    public Person(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
