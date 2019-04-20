@@ -6,11 +6,11 @@ spec:
   template:
     metadata:
       labels:
-        app: demo
+        app: greetings
     spec:
       containers:
         - name: greetings
-          image: demo
+          image: greetings
           imagePullPolicy: "Never"
           ports:
             - containerPort: 8080
